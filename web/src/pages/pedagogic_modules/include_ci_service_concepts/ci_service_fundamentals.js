@@ -121,12 +121,13 @@ const CIServiceFundamentals = ({ module, tab }) => {
       </p>
       <p>
         Using the app, experiment with simulating the execution with each server (use the radio button to select which
-        server to use), leaving all values to their default. You should notice a difference in execution time. In the
-        client Client-Server module, Server #2 is able to finish execution more quickly than Server #1, as the latter is
-        connected to the client via a low-bandwidth link. Here, using the default overhead values of 1 sec and 5 sec for
-        Server #1 and Server #2 respectively, we observe that Server #1 finishes execution a bit faster. For a task with
-        less computation to do, Server #1 would be even more preferable, while Server #2 would be the better choice
-        provided the task has enough computation to do.
+        server to use), leaving all values to their default. You should notice a difference in execution time. In the <a
+        href="/pedagogic_modules/client_server">Client-Server module</a>, Server #2 is able to finish execution more
+        quickly than Server #1, as the latter is connected to the client via a low-bandwidth link. Here, using the
+        default overhead values of 1 sec and 5 sec for Server #1 and Server #2 respectively, we observe that Server #1
+        finishes execution a bit faster. For a task with less computation to do, Server #2 would be more preferable
+        (due to the high-bandwidth link), while Server #1 would be the better choice provided the task has enough
+        computation to do.
       </p>
 
       <SimulationActivity panelKey="ci-service-fundamentals-simulation" content={<CIServiceFundamentalsSimulation />} />
